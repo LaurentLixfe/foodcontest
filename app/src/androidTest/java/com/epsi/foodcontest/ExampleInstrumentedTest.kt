@@ -1,3 +1,4 @@
+
 package com.epsi.foodcontest
 
 import androidx.test.platform.app.InstrumentationRegistry
@@ -13,6 +14,7 @@ import org.junit.Assert.*
  *
  * See [testing documentation](http://d.android.com/tools/testing).
  */
+@Suppress("SpellCheckingInspection")
 @RunWith(AndroidJUnit4::class)
 class ExampleInstrumentedTest {
     @Test
