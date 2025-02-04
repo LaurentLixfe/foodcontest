@@ -2,7 +2,7 @@ package com.epsi.foodcontest
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.epsi.foodcontest.business.Scenario1
+import com.epsi.foodcontest.business.Scenario2
 import com.epsi.foodcontest.models.WomanHealth
 import com.epsi.foodcontest.utils.removeHugeFoods
 import kotlinx.coroutines.delay
@@ -14,8 +14,8 @@ import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.update
 
 class MainViewModel : ViewModel() {
-    private val currentScenario = Scenario1
-    var state = MutableStateFlow(MainState())
+    private val currentScenario = Scenario2
+    var state = MutableStateFlow(MainState(roundTime = currentScenario.TIME_BETWEEN_PLATE))
         private set
 
     init {
